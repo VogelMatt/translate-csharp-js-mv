@@ -5,8 +5,12 @@ const names = [
     "London", "The mall", "Ryman Auditorium", "The Great Wall of China"
 ];
 
-console.log("All Pace Names");
+console.log("All Place Names");
 
-for (const name of names) {
+const StartsWithThe = names.filter(name => name.includes("The"));
+
+for (const name of StartsWithThe) {
+
+
   console.log(name);
 }

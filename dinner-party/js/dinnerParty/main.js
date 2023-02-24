@@ -5,7 +5,8 @@ function main() {
     "Table 2": []
   };
 
-  for (const guest of guests) {
+  for (const guest of guests) 
+  {
     const table1Occupations = tables["Table 1"].map(g => g.occupation);
     if (table1Occupations.includes(guest.occupation)) {
       tables["Table 2"].push(guest);
